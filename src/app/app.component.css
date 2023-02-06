@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.kittenList{
+    flex:1
+}
+.kittenUser{
+    flex:1
+}
+

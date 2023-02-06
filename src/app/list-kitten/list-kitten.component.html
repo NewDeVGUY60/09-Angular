@@ -1,0 +1,14 @@
+<h1>Kittens in adopt</h1>
+
+<ul *ngFor="let kitten of kittens; let i=index">
+        <div *ngIf="hidden">
+        <li>Name: {{kitten?.name}} </li>
+        <li>Breed: {{kitten?.breed}} </li>
+        <li>Birth-day: {{kitten?.date}} </li>
+    </div>
+        
+    <div class="img">
+        <img (mouseover)="hidden=true" (mouseout)="hidden=false" src={{kitten?.img}} />
+    </div>
+    <button (click)="adoptKitten(kitten,i)">Adotp this kitten</button>
+</ul>
